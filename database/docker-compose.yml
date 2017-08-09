@@ -30,11 +30,11 @@ services:
             - CASSANDRA_SEEDS=${CASSANDRA_MASTER}
         # Exposing ports for inter cluste communication
         expose:
-            - 7000:7000
-            - 7001:7001
-            - 7199:7199
-            - 9042:9042
-            - 9160:9160
+            - "7000:7000"
+            - "7001:7001"
+            - "7199:7199"
+            - "9042:9042"
+            - "9160:9160"
         # Cassandra ulimt recommended settings
         ulimits:
             memlock: -1
